@@ -9,4 +9,4 @@ on:
       runs-on:  ubuntu-latest
       steps:
         - name: Comentar issue
-          run: curl -H "Accept: application/vnd.github.v3+json" https://api.github.com/repos/octocat/hello-world/issues/comments/42
+          run: curl 'https://api.github.com/repos/octocat/hello-world/issues/comments'
