@@ -11,7 +11,7 @@ jobs:
 
   list:
 
-    runs_on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: listar arquivos
         run:  bin/bash ls
