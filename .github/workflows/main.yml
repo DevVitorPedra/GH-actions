@@ -2,9 +2,7 @@ name: DevinHouse-actions
 
 on:
   push:
-    branches: [ main ]
-  
-
+    branches: [ GH-actions exe4 ]
   workflow_dispatch:
 
 jobs:
@@ -14,12 +12,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: listar arquivos
-        run:  |
-          ls ${{  github.workspace  }}
-
-      - name: Verificar node
-        run: node --version
-      - name: Verificar npm
-        run:  npm --version
-      - name: Verificar docker
-        run:  docker info
+        run: echo ${{secrets.THE_SECRET}}
