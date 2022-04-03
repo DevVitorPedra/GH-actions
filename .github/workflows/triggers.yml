@@ -7,5 +7,6 @@ jobs:
   new-comment:
     runs-on:  ubuntu-latest
     steps:
-      - name: Comentar issue
-        run: curl 'https://api.github.com/repos/octocat/hello-world/issues/comments'
+      - name: Get issue id
+        run: curl 'https://api.github.com/repos/DevVitorPedra/GH-actions/issues'
+      
