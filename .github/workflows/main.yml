@@ -2,7 +2,7 @@ name: DevinHouse-actions
 
 on:
   push:
-    branches: [ GH-actions exe4 ]
+    
   workflow_dispatch:
 
 jobs:
