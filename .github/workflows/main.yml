@@ -13,8 +13,6 @@ jobs:
 
     runs-on: ubuntu-latest
     steps:
-      - run:  echo "Lista de arquivos"
       - name: listar arquivos
-       
         run:  |
           ls ${{  github.workspace  }}
