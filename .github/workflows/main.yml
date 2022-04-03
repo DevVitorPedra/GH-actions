@@ -16,6 +16,10 @@ jobs:
       - name: listar arquivos
         run:  |
           ls ${{  github.workspace  }}
-          
+
       - name: Verificar node
         run: node --version
+      - name: Verificar npm
+        run:  npm --version
+      - name: Verificar docker
+        run:  docker info
