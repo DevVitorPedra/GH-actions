@@ -1,8 +1,7 @@
 name: DevInHouse-actions
 
 on:
-  issues:
-    types:  [opened]
+  push:
 
 jobs:
   new-comment:
