@@ -16,3 +16,6 @@ jobs:
       - name: listar arquivos
         run:  |
           ls ${{  github.workspace  }}
+    steps:
+      - name: Verificar node
+        run: node --version
