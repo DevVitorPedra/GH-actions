@@ -2,7 +2,7 @@ name: DevInHouse-Triggers
 
 on:
   issues:
-    types:  [opened]
+    types: [opened]
 
 jobs:
   new-comment:
