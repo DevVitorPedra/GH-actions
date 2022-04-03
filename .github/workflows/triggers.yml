@@ -1,11 +1,12 @@
 name: DevInHouse-Triggers
 
 on:
-  push:
+  issues:
+    types:  [opened]
 
 jobs:
   new-comment:
     runs-on:  ubuntu-latest
     steps:
       - name: Get issue id
-        run: curl 'https://api.github.com/repos/DevVitorPedra/GH-actions/issues'
+        run: echo ${{github.event.issue.node_id}}
