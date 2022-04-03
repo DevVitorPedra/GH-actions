@@ -4,9 +4,9 @@ on:
   issues:
     types:  [opened]
 
-  jobs:
-    new-comment:
-      runs-on:  ubuntu-latest
-      steps:
-        - name: Comentar issue
-          run: curl 'https://api.github.com/repos/octocat/hello-world/issues/comments'
+jobs:
+  new-comment:
+    runs-on:  ubuntu-latest
+    steps:
+      - name: Comentar issue
+        run: curl 'https://api.github.com/repos/octocat/hello-world/issues/comments'
