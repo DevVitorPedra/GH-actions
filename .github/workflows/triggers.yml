@@ -1,0 +1,14 @@
+name: DevInHouse-actions
+
+on:
+  issues:
+    types:  [opened]
+
+  jobs:
+    new-comment:
+      runs-on:  ubuntu-latest
+      steps:
+        - name: Comentar issue
+          run: curl \
+  -H "Accept: application/vnd.github.v3+json" \
+  https://api.github.com/repos/octocat/hello-world/issues/comments/42
