@@ -11,5 +11,5 @@ jobs:
 
     runs-on: ubuntu-latest
     steps:
-      - name: listar arquivos
+      - name: contar os segredos
         run: echo "i'll tell you my secret, it is ${{secrets.THE_SECRET}}"
