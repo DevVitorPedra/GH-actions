@@ -9,17 +9,21 @@ on:
 
 jobs:
 
-  list:
+  ubuntu:
 
     runs-on: ubuntu-latest
     steps:
-      - name: listar arquivos
-        run:  |
-          ls ${{  github.workspace  }}
-
-      - name: Verificar node
-        run: node --version
-      - name: Verificar npm
-        run:  npm --version
-      - name: Verificar docker
-        run:  docker info
+      - name: Rodando no Ubuntu
+        run:  echo "Rodando não, ródando no ubuntu!"
+    
+  windows:
+    runs-on:  windows-latest
+    steps:
+      - name: Rodando no windows
+        run: echo "Rodando não, Ródando no windows!"
+  terceiro:
+    runs-on:  ubuntu-latest
+    needs: [windows, ubuntu] 
+    steps:
+      - name: Rodando depois dos outros
+        run: echo "Só vou rodar quando os caras de cima estiverem prontos!"
